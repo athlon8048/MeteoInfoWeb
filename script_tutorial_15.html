@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MeteoInfo Product</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.ennui.contentslider.css" rel="stylesheet" type="text/css" media="screen,projection" />
+ <style type="text/css">
+ body{
+ background-image:url("images/templatemo_body1.jpg")
+ }
+ </style>
+  <script type="text/javascript" src="js/jquery.js"></script>  
+  <script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+ <script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript">
+$(document).ready(function() {
+
+$("a[rel=GalleryGroup]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+			
+     });
+    </script>
+</head>
+<body>
+<div id="templatemo_header_wrapper">
+  <div id="templatemo_header">
+    <div id="site_title">
+      <h1>MeteoInfo <span></span></h1>
+    </div>
+    <div class="cleaner"></div>
+  </div>
+  <!-- end of header -->
+  <div id="templatemo_menu">
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="Products.html">Products</a></li>
+      <li><a href="Examples.html" class="current">Examples</a></li>
+      <li><a href="Downloads.html">Downloads</a></li>
+      <li><a href="Documentation.html">Documentation</a></li>
+      
+    </ul>
+  </div>
+  <!-- end of templatemo_menu -->
+  
+</div>
+<!-- end of header_wrapper -->
+<div id="templatemo_content_wrapper_outer">
+  <div id="templatemo_content_wrapper_inner">
+    <div id="templatemo_content_wrapper">
+      <div id="templatemo_content" style="width:100%">
+       
+        <div class="cleaner_h10"></div>
+        <div class="services_section">
+          <h4><a href="javascript:;">MeteoInfo script tutorial 15: Map projection</a></h4>          
+          <div class="services_content">
+            <p>The map projection code of MeteoInfo come from Proj4J library, so a Proj4 projection string is used for projection 
+              transformation. For instance, a lambert conformal projection string is:<br />   
+              +proj=lcc +lat_1=Latitude of first standard parallel <br />
+              +lat_2=Latitude of second standard parallel <br />
+              +lat_0=Latitude of false origin <br />
+              +lon_0=Longitude of false origin <br />
+              +x_0=False Origin Easting <br />
+              +y_0=False Origin Northing <br />
+              <br />
+              You can also look at the help document of Proj4, or find the information at some website, such as: 
+              <a href="http://remotesensing.org/geotiff/proj_list">http://remotesensing.org/geotiff/proj_list</a><br />
+              <br />
+              Firstly create a projection string and then construct a ProjectionInfo class, then use "projectLayer(
+              ProjectionInfo projInfo)" method of MapView object to do it. <br />
+              <br />
+              The following scripts demonstrate map projection functions. <br />              
+            </p>
+            <div class="cleaner"></div>
+          </div>
+        </div>
+      
+      </div>
+      <!-- end of templatemo_content -->
+      <!-- end of sidebar -->
+      <div class="services_section">
+          <h5><a href="examples/script/tutorial_15_mollweide.py">tutorial_15_mollweide.py </a></h5>
+          <div class="services_content">
+            <div id="gallery" style="width:100%">
+              <ul>
+                <li> <a href="javascript:;" title="1"><img src="examples/image/proj_mollweide.png" alt="01" /></a>
+                  <div class="button"><a rel='GalleryGroup' href="examples/image/proj_mollweide.png">Zoom In</a></div>
+                </li>                  
+              </ul>
+            </div>
+            <div class="cleaner"></div>
+          </div>
+      </div>   
+      <div class="services_section">
+          <h5><a href="examples/script/tutorial_15_lambert.py">tutorial_15_lambert.py </a></h5>
+          <div class="services_content">
+            <div id="gallery" style="width:100%">
+              <ul>
+                <li> <a href="javascript:;" title="1"><img src="examples/image/proj_lambert.png" alt="01" /></a>
+                  <div class="button"><a rel='GalleryGroup' href="examples/image/proj_lambert.png">Zoom In</a></div>
+                </li>                  
+              </ul>
+            </div>
+            <div class="cleaner"></div>
+          </div>
+      </div>   
+      <div class="cleaner"></div>
+    </div>
+  </div>
+</div>
+<div id="templatemo_footer_wrapper">
+  <div id="templatemo_footer">
+    <ul class="footer_menu">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="Products.html">Products</a></li>
+      <li><a href="Examples.html">Examples</a></li>
+      <li><a href="Downloads.html">Downloads</a></li>
+      <li><a href="Documentation.html">Documentation</a></li>
+    </ul>
+    Copyright © 2011-2015 - Yaqiang Wang (<a href="mailto:yaqiang.wang@gmail.com">yaqiang.wang@gmail.com</a>) </div>
+  <!-- end of footer -->
+</div>
+<!-- end of footer_wrapper -->
+</body>
+</html>

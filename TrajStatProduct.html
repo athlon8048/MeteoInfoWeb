@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TrajStat Product</title>
+<meta name="keywords" content="" />
+<meta name="" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+ <style type="text/css">
+ body{
+ background-image:url("images/templatemo_body1.jpg")
+ }
+ </style>
+   <script type="text/javascript" src="js/jquery.js"></script>  
+ <script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+  <script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+   <script type="text/javascript">
+$(document).ready(function() {
+$("a[rel=GalleryGroup]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+     });
+    </script>
+</head>
+<body>
+<div id="templatemo_header_wrapper">
+  <div id="templatemo_header">
+    <div id="site_title">
+      <h1>MeteoInfo <span></span></h1>
+    </div>
+    <div class="cleaner"></div>
+  </div>
+  <!-- end of header -->
+  <div id="templatemo_menu">
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="Products.html" class="current">Products</a></li>
+      <li><a href="Examples.html">Examples</a></li>
+      <li><a href="Downloads.html">Downloads</a></li>
+      <li><a href="Documentation.html">Documentation</a></li>
+      
+    </ul>
+  </div>
+  <!-- end of templatemo_menu -->
+ 
+</div>
+<!-- end of header_wrapper -->
+<div id="templatemo_content_wrapper_outer">
+  <div id="templatemo_content_wrapper_inner">
+    <div id="templatemo_content_wrapper">
+      <div id="templatemo_content" style="width:100%">
+       
+        <div class="cleaner_h10"></div>
+        <div class="services_section">
+          <h4><a href="javascript:;">TrajStat Features</a></h4>
+          <div class="services_content">
+            <p>Statistical analysis of air mass 
+            back trajectories combined with long-term ambient air pollution measurements are 
+            useful tools for source identification. Using these methods, the geographic 
+            information system (GIS) based software, TrajStat, was developed to view, query, 
+            and cluster the trajectories and compute the potential source contribution 
+            function (PSCF) and concentration weighted trajectory (CWT) analyses when 
+            measurement data are included.</p>
+            <p>The HYSPLIT model is used to calculate trajectories, which are loaded into the system as an 
+            external process. The trajectory files with three-dimensional endpoint data 
+            could be converted to the ESRI “PolylineZ” shape file format. In this type of 
+            shape file the x, y and z properties of each point are defined by its longitude, 
+            latitude and air pressure along the trajectory. The trajectories can be shown in 
+            various spatial patterns. For instance, using only the level (x, y) or height 
+            (z) coordinates, each trajectory can be shown as a two-dimensional figure. When 
+            combined height with longitude and latitude values, the three-dimensional 
+            trajectories can be plotted. The long-term measurement data could be assigned to 
+            their corresponding trajectories. A 
+            query function was developed to identify the trajectories to which a user can 
+            distinguish the polluted trajectories with high measurement concentration from a 
+            large number of trajectories and then the pollutant pathway could be roughly 
+            estimated. Euclidean distance or angle distance (Sirois and Bottenheim, 1995) can be selected as the cluster model. A reasonable maximum cluster 
+            number can be decided through visual inspection and comparison of the 
+            mean-trajectory maps. The mean pollutant concentration for each cluster can be 
+            computed using the cluster statistics function. Pollutant pathways could then be 
+            associated with the high concentration clusters. After calculating the PSCF and 
+            CWT value, an arbitrary weight function (Polissar et al., 1999) is applied to reduce the uncertainty of cells with few endpoints. 
+            Then the potential source regions with high PSCF or CWT value could be 
+            identified.</p>
+            <div class="cleaner"></div>
+          </div>
+        </div>
+      
+      </div>
+      <!-- end of templatemo_content -->
+      <!-- end of sidebar -->
+    <div class="services_section">
+          <h4><a href="javascript:;">Screen Shots </a></h4>
+          <div class="services_content">
+            <div id="gallery" style="width:100%">
+              <ul>
+                <li> <a href="javascript:;" title="1"><img src="images/meteoinfo/TrajStat_1.png" alt="01" /></a>
+                  <div class="button"><a rel='GalleryGroup' href="images/meteoinfo/TrajStat_1.png">Zoom In</a></div>
+                </li>
+                <li> <a href="javascript:;" title="2"><img src="images/meteoinfo/TrajStat_2.png" alt="02" /></a>
+                  <div class="button"><a rel='GalleryGroup' href="images/meteoinfo/TrajStat_2.png">Zoom In</a></div>
+                </li>
+                <li> <a href="javascript:;" title="3"><img src="images/meteoinfo/TrajStat_3.png" alt="03" /></a>
+                  <div class="button"><a rel='GalleryGroup' href="images/meteoinfo/TrajStat_3.png">Zoom In</a></div>
+                </li>
+                <li> <a href="javascript:;" title="4"><img src="images/meteoinfo/TrajStat_4.png" alt="04" /></a>
+                  <div class="button"><a rel='GalleryGroup' href="images/meteoinfo/TrajStat_4.png">Zoom In</a></div>
+                </li>
+                <li> <a href="javascript:;" title="5"><img src="images/meteoinfo/TrajStat_5.png" alt="05" /></a>
+                  <div class="button"><a rel='GalleryGroup' href="images/meteoinfo/TrajStat_5.png">Zoom In</a></div>
+                </li>
+              </ul>
+            </div>
+            <div class="cleaner"></div>
+          </div>
+        </div>
+      <div class="cleaner"></div>
+    </div>
+  </div>
+</div>
+<div id="templatemo_footer_wrapper">
+  <div id="templatemo_footer">
+    <ul class="footer_menu">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="Products.html">Products</a></li>
+      <li><a href="Examples.html">Examples</a></li>
+      <li><a href="Downloads.html">Downloads</a></li>
+      <li><a href="Documentation.html">Documentation</a></li>
+    </ul>
+    Copyright © 2011-2015 - Yaqiang Wang (<a href="mailto:yaqiang.wang@gmail.com">yaqiang.wang@gmail.com</a>) </div>
+  <!-- end of footer -->
+</div>
+<!-- end of footer_wrapper -->
+</body>
+</html>
